@@ -25,7 +25,7 @@ echo "\n \n";
 // yaitu variable dari suatu value
 
 $contoh = "Marfelio";
-$$contoh = "Hartono";
+$$contoh = "Jesen";
 
 echo "Contoh : $contoh";
 echo "\n";
@@ -64,7 +64,7 @@ var_dump(rsort($data_arrayFun)); // Berurut berbalik dengan boolean True
 $datamap_arrayFun = [
   "id" => 18,
   "nama" => "Marfelio
- Hartono Putra",
+ Jesen",
   "alamat" => "Bandung"
 ];
 
@@ -88,13 +88,13 @@ $biodata = array(
 $mahasiswa = array(
   'id' => 1,
   'nama' => 'Marfelio
- Hartono',
+ Jesen',
   'umur' => 18
 );
 
 $mahasiswa2 = [
   'id' => 2,
-  'nama' => 'Asep Muliyana',
+  'nama' => 'Agus endog,
   'umur' => 25
 ];
 
@@ -165,7 +165,7 @@ echo $aksi . "\n\n"; // 'ini data'
 
 // For-Each
 
-$foreach_array_nama = ['Marfelio', 'Hartono', 'Putra'];
+$foreach_array_nama = ['Marfelio', 'Jesen', 'Aditya'];
 
 foreach ($foreach_array_nama as $var) {
   echo "Hello, $var" . PHP_EOL;
@@ -178,8 +178,8 @@ echo  "\n\n";
 $foreach_map_nama = [
   'nama_depan' => 'Marfelio
 ',
-  'nama_tengah' => 'Hartono',
-  'nama_belakang' => 'Putra'
+  'nama_tengah' => 'Jesen',
+  'nama_belakang' => 'Aditya'
 ];
 
 foreach ($foreach_map_nama as $key => $value) {
@@ -214,7 +214,7 @@ $anonymousFun = function ($nama) {
 };
 
 $anonymousFun('Marfelio');
-$anonymousFun('Hartono');
+$anonymousFun('Jesen');
 
 
 function function_biasa(string $nama, $anonymousFunction_argument)
@@ -235,7 +235,7 @@ function_biasa('Marfelio', function (string $nama) {
 // lalu diikuti variable-variable yang ingin kita gunakan
 
 $closure_namaDepan = "Marfelio";
-$closure_namaBelakang = "Hartono";
+$closure_namaBelakang = "Jesen";
 
 $function_anonymous = function () use ($closure_namaDepan, $closure_namaBelakang) {
   echo "Hello, $closure_namaDepan $closure_namaBelakang" . PHP_EOL;
@@ -272,11 +272,11 @@ factorialRecursive(6); // 720
 
 echo "String Function" . PHP_EOL;
 echo join(",", [1, 2, 3, 4, 5]) . PHP_EOL; // Menggabungkan Array jadi String
-var_dump(explode(" ", "Marfelio Hartono Putra")); // Memecah string menjadi array
-echo strtolower("Marfelio Hartono Putra") . PHP_EOL; // String menjadi huruf kecil
-echo strtoupper("Marfelio Hartono Putra") . PHP_EOL; // String menjadi huruf besar
-echo trim("   Marfelio Hartono Putra      ") . PHP_EOL; // Menghapus whitespace di depan dan belakang string
-echo substr("Marfelio Hartono Putra", 0, 5) . PHP_EOL; // Mengambil sebagian string
+var_dump(explode(" ", "Marfelio Jesen")); // Memecah string menjadi array
+echo strtolower("Marfelio Jesen") . PHP_EOL; // String menjadi huruf kecil
+echo strtoupper("Marfelio Jesen") . PHP_EOL; // String menjadi huruf besar
+echo trim("   Marfelio Jesen      ") . PHP_EOL; // Menghapus whitespace di depan dan belakang string
+echo substr("Marfelio Jesen", 0, 5) . PHP_EOL; // Mengambil sebagian string
 
 echo "Variable Global Scope dan Local Scope" . PHP_EOL;
 
@@ -292,7 +292,7 @@ echo "Reference" . PHP_EOL;
 
 $var_referenceBaru = "Marfelio";
 $var_referenceLain = &$var_referenceBaru; // maka valuenya jadi 'Marfelio'
-$var_referenceLain = "Hartono"; // dari 'Marfelio' jadi 'Hartono'
+$var_referenceLain = "Jesen"; // dari 'Marfelio' jadi 'Jesen'
 
 echo "Pass by Reference" . PHP_EOL;
 
